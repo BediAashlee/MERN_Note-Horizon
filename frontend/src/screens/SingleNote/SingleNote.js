@@ -77,7 +77,7 @@ function SingleNote({ match, history }) {
                 onChange={(e) => setTitle(e.target.value)}
               />
             </Form.Group>
-
+            <br />
             <Form.Group controlId="content">
               <Form.Label>Content</Form.Label>
               <Form.Control
@@ -88,6 +88,7 @@ function SingleNote({ match, history }) {
                 onChange={(e) => setContent(e.target.value)}
               />
             </Form.Group>
+            
             {content && (
               <Card>
                 <Card.Header>Note Preview</Card.Header>
@@ -96,7 +97,7 @@ function SingleNote({ match, history }) {
                 </Card.Body>
               </Card>
             )}
-
+            <br />
             <Form.Group controlId="content">
               <Form.Label>Category</Form.Label>
               <Form.Control
