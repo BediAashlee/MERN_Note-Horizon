@@ -88,7 +88,7 @@ function SingleNote({ match, history }) {
                 onChange={(e) => setContent(e.target.value)}
               />
             </Form.Group>
-            
+            <br />
             {content && (
               <Card>
                 <Card.Header>Note Preview</Card.Header>
@@ -107,6 +107,7 @@ function SingleNote({ match, history }) {
                 onChange={(e) => setCategory(e.target.value)}
               />
             </Form.Group>
+            <br />
             {loading && <Loading size={50} />}
             <Button variant="primary" type="submit">
               Update Note
